@@ -36,8 +36,9 @@ public:
         // TODO: Validate and set celsius_
         if(celsius < -273.15){
             throw invalid_argument("Temperature cannot be below absolute zero (-273.15");
-            celsius_ = celsius;
+           
         }
+         celsius_ = celsius;
     }
     
 
@@ -52,7 +53,7 @@ public:
     // Formula: F = C * 9/5 + 32
     double getFahrenheit() const {
         // TODO: Implement
-        return celsius_* 9.0 / 5.0 + 32,0;
+        return celsius_* 9.0/ 5.0 + 32.0;
         
     }
 
